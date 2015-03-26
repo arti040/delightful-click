@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!-- fonts -->  
+    <!-- Roboto font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	
+	<title>Demo - jQuery DelightfulClick</title>
+</head>
+<body>
+   
+  <div id="app-main-view">	
+    <section id="about">
+      <div class="content-wrapper">
+        <h1>
+          Delightful Click
+          <small>v. 1.1</small>
+        </h1>
+        <p>Amazingly awesome button on-click effects for your app!</p>
+        <ul>
+          <li>Lightweight - less than 4KB minified!</li>
+          <li>No dependencies - only <a href="http://jquery.com">jQuery</a>'s required.</li>
+          <li>Support for <a href="http://julian.com/research/velocity/">Velocity</a> animation engine.</li>
+          <li>Easy <a href="#options">customizable</a> - even a monkey can write an effect!</li>
+        </ul>
+      </div>
+    </section>
+  	<section id="examples">
+    	<div class="content-wrapper">
+    	<h2>Examples</h2>
+  		<figure>
+  		  <a href="#" id="wave-effect" class="btn">Click Me</a>
+  		  <code>
+  		    <span class="fnc">$</span>(<span class="var">el</span>).<span class="fnc">delightfulClick</span>({
+    		    effect: <span class="str">'wave'</span>,
+    		    color: <span class="str">'#ffbcbc'</span>,
+    		    speed: <span class="nbr">500</span>
+  		    });
+  		  </code>
+  		</figure>
+  		<figure>
+  		  <a href="#" id="wave-square-effect" class="btn">Click Me</a>
+  		  <code>
+  		    <span class="fnc">$</span>(<span class="var">el</span>).<span class="fnc">delightfulClick</span>({
+    		    effect: <span class="str">'waveSquare'</span>,
+    		    color: <span class="str">'orange'</span>,
+    		    speed: <span class="nbr">500</span>
+  		    });
+  		  </code>
+  		</figure>
+  		<figure>
+  		  <a href="#" id="fade-effect" class="btn">Click Me</a>
+  		  <code>
+  		    <span class="fnc">$</span>(<span class="var">el</span>).<span class="fnc">delightfulClick</span>({
+    		    effect: <span class="str">'fade'</span>,
+    		    color: <span class="str">'#d4ebff'</span>,
+    		    speed: <span class="nbr">600</span>
+  		    });
+  		  </code>
+  		</figure>
+  		<figure>
+  		  <a href="#" id="fill-up-effect" class="btn">Click Me</a>
+  		  <code>
+  		    <span class="fnc">$</span>(<span class="var">el</span>).<span class="fnc">delightfulClick</span>({
+    		    effect: <span class="str">'fillUp'</span>,
+    		    color: <span class="str">'#fc0'</span>,
+    		    speed: <span class="nbr">500</span>
+  		    });
+  		  </code>
+  		</figure>
+  		<figure>
+  		  <a href="#" id="fill-down-effect" class="btn">Click Me</a>
+  		  <code>
+  		    <span class="fnc">$</span>(<span class="var">el</span>).<span class="fnc">delightfulClick</span>({
+    		    effect: <span class="str">'fillDown'</span>,
+    		    color: <span class="str">'#892ed6'</span>,
+    		    speed: <span class="nbr">500</span>
+  		    });
+  		  </code>
+  		</figure>
+    	</div>
+  	</section>
+  	<section id="download">
+    	<div class="content-wrapper">
+      	<h2>Download</h2>
+      	<p>
+        	Go to my <a title="My Github profile" href="https://github.com/arti040">Github profile</a>, where you can find 
+        	developer as well as minified version of the plugin.
+      	</p>
+    	</div>
+  	</section>
+  	<section id="integration">
+    	<div class="content-wrapper">
+      	<h2>Integration</h2>
+      	<p>Simple as fuck. Just attach a plugin script. You can do this however you want. Below just an example:</p>
+      	<code>
+      	  <span class="tag">&lt;script</span> <span class="att">src="</span><span class="str">/path/to/the/script/jquery.delightful-click.min.js</span><span class="att">"</span><span class="tag">&gt;&lt;/script&gt;</span>
+      	</code>
+    	</div>
+  	</section>
+  	<section id="options">
+    	<div class="content-wrapper">
+    	  <h2>Options</h2>
+    	  <p>List of available options:</p>
+    	  <code>
+    	    <span class="met">effect:</span> <span class="str">'available: wave, waveSquare, fade, fillUp or fillDown'</span>, <span class="cmt">//default: wave</span><br>
+    	    <span class="met">color:</span> <span class="str">'valid CSS color'</span>, <span class="cmt">//default: #ddd</span><br>              
+          <span class="met">speed:</span> <span class="str">'speed in milliseconds'</span>, <span class="cmt">//default: 400</span><br>
+          <span class="met">engine:</span> <span class="str">'animate or velocity'</span>, <span class="cmt">//default: animate</span><br>
+          <span class="met">effectClass:</span> <span class="str">'class of an effect element'</span> <span class="cmt">//default: del-effect</span>
+
+    	  </code>
+    	</div>
+  	</section>
+  	<section id="effects-how-to">
+    	<div class="content-wrapper">
+      	<h2>How to write an effect?</h2> 
+      	<p>I will add this soon.</p> 	
+    	</div>
+  	</section>
+    <footer>
+      <p>jQuery Delightful-Click v. 1.1 <i class="fa fa-circle"></i> <span class="no-for-phone">created by</span> <a href="mailto:ja@piotrpotera.com?subject=Your subject here.">Piotr Potera</a></p>
+      <ul class="socials">
+        <li><a title="My LinkedIn profile" href="https://www.linkedin.com/in/piotrpotera">LinkedIn profile</a></li>  
+        <li><i class="fa fa-circle"></i></li>   
+        <li><a title="My Github profile" href="https://github.com/arti040">My Github projects</a></li>
+      </ul>
+    </footer>
+  </div>
+  	
+  <!-- javascripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script>
+		//fallback to library hosted locally
+		window.jQuery || document.write('<script src="js/libs/jquery.min.js" type="text/javascript"><\/script>');
+	</script>
+	
+  <script src="js/plugins/jquery.delightful-click-dev.js"></script>
+  
+	<!-- velocity animation framework -->
+  <script src="js/plugins/velocity.min.js"></script>
+			
+	<!-- simplate js -->
+	<script src="js/plugins/simplate.js"></script>
+	
+	<!-- lorraine framework -->
+	<script src="js/lorraine/helpers.js"></script>
+  <script src="js/lorraine/events.js"></script>
+  <script src="js/lorraine/app.js"></script>
+  <script src="js/lorraine/device.js"></script>
+
+</body>
+</html>
