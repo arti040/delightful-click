@@ -45,7 +45,7 @@
     			var $el = $(me.element);
     			var opts = {}
           
-          //Let's perpare a button to be a host of the effect.
+          //Let's prepare a button to be a host of the effect.
   				if($el.css('position') != 'absolute') { 
     				$el.css('position','relative').css('overflow','hidden');
   				}
